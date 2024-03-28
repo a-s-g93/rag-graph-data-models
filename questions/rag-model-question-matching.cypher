@@ -1,0 +1,2 @@
+CREATE (:Source {id: "String", url: "String"})-[:HAS_DOCUMENT]->(n2:Document {id: "String", text: "String"})-[:HAS_QUESTION]->(:Question:LLMGenerated {id: "String", text: "String", embedding: "List<float>"}),
+(:Question:UserGenerated {id: "String", content: "String", embedding: "List<float>"})-[:NEXT]->(:Response {id: "String", content: "String", rating: "int"})-[:HAS_CONTEXT]->(n2)

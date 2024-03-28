@@ -1,0 +1,1 @@
+CREATE (:Source {id: "String", url: "String"})-[:HAS_DOCUMENT]->(:Document {id: "String", text: "String", embedding: "List<float>"})

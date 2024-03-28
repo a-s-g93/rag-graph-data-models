@@ -1,0 +1,1 @@
+CREATE (:Source {id: "String", url: "String"})-[:HAS_DOCUMENT]->(:Parent:Document {id: "String", text: "String"})-[:HAS_CHILD]->(:Child:Document {id: "String", text: "String", embedding: "List<float>"})
